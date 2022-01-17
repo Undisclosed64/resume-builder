@@ -3,3 +3,19 @@
   padding: 0;
   margin: 0;
 }
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  background-color: whitesmoke;
+}
+.brandName {
+  margin: 1em;
+}
+.navLinksList {
+  display: flex;
+}
+.navbarLink {
+  list-style: none;
+  margin: 1em;
+}
