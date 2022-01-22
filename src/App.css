@@ -6,16 +6,52 @@
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 1em;
-  background-color: whitesmoke;
+  padding: 0.5em;
+  background-color: cornflowerblue;
+}
+.toggleButton {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 1em;
+  top: 1.5em;
+  display: none;
+}
+.bar {
+  background-color: black;
+  width: 35px;
+  height: 2px;
+  margin: 4px;
 }
 .brandName {
   margin: 1em;
+  margin-left: 0;
+  font-size: 1.2rem;
 }
-.navLinksList {
+.logo {
+  margin-right: 0.5em;
+}
+.UlNavList {
   display: flex;
 }
 .navbarLink {
   list-style: none;
   margin: 1em;
+  margin-top: 1.3em;
+}
+@media (max-width: 450px) {
+  .toggleButton {
+    display: flex;
+  }
+  .UlNavList {
+    display: none;
+  }
+  .UlNavList.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  nav {
+    flex-direction: column;
+  }
 }
