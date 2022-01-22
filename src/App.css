@@ -1,13 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,700;1,900&display=swap");
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "Lato", sans-serif;
 }
 nav {
   display: flex;
   justify-content: space-between;
   padding: 0.5em;
-  background-color: cornflowerblue;
+  background-color: orange;
 }
 .toggleButton {
   display: flex;
@@ -36,8 +38,58 @@ nav {
 }
 .navbarLink {
   list-style: none;
-  margin: 1em;
-  margin-top: 1.3em;
+  padding: 1em;
+  padding-top: 1.3em;
+}
+#home {
+  padding: 2em;
+  padding-top: 6em;
+  text-align: center;
+}
+.homeParagraph {
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
+  line-height: 30px;
+  margin: auto;
+}
+.createResumeBtn {
+  padding: 1.5em;
+  text-transform: uppercase;
+  background-color: #0091ff;
+  color: white;
+  border: none;
+  letter-spacing: 2px;
+}
+@media (min-width: 400px) {
+  .homeParagraph {
+    width: 80%;
+  }
+}
+@media (min-width: 568px) {
+  #home {
+    padding-top: 8em;
+  }
+
+  .homeParagraph {
+    width: 60%;
+    padding: 1.5em 0 1.5em 0;
+  }
+}
+@media (min-width: 668px) {
+  .home-heading {
+    font-size: 2.8rem;
+  }
+}
+@media (min-width: 768px) {
+  .homeParagraph {
+    width: 50%;
+    padding: 2em 0 2em 0;
+  }
+}
+@media (min-width: 992px) {
+  #home {
+    padding-top: 10em;
+  }
 }
 @media (max-width: 450px) {
   .toggleButton {
